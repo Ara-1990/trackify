@@ -15,7 +15,7 @@ class LocationSyncWorker (
 
 ) : CoroutineWorker(context, params) {
 
-//    private val dao = AppDatabase.get(context).locationDao()
+
 
     override suspend fun doWork(): Result {
 
@@ -40,13 +40,7 @@ class LocationSyncWorker (
         }
 
 
-//        unsynced.forEach {
-//            Log.d("WORKER", "Send: ${it.latitude}, ${it.longitude}")
-//        }
 
-//        dao.markSynced(unsynced.map { it.id })
-
-//        return Result.success()
     }
 
 }
